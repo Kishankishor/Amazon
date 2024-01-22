@@ -17,6 +17,7 @@ export const Product = ({ rating, title, price, image, id }) => {
 
             },
         })
+        console.log(basket)
 
     }
     return (
