@@ -12,8 +12,9 @@ import { useStateValue } from './context/Stateprovider';
 
 
 function App() {
-  const [{} , dispatch] = useStateValue();
+  const [{basket} , dispatch] = useStateValue();
   useEffect(()=>{
+    console.log(basket)
     auth.onAuthStateChanged(authUser => {
       console.log('the USER is >>>' , authUser);
       if(authUser){
@@ -29,7 +30,7 @@ function App() {
       }
     })
 
-  }, [])
+  }, [basket, dispatch])
   return (
 
     <div className="App">
