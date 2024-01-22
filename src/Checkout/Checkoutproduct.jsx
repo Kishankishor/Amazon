@@ -8,6 +8,7 @@ export const Checkoutproduct = ({ id, title, image, price, rating }) => {
             type: 'REMOVE_FROM_BASKET',
             id: id
         })
+        console.log(basket)
 
     }
     return (
